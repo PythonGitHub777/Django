@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block title %}<title>{{post.title}}</title>{% endblock  %}
+{% block content %}
+
+<h1 class="ml-2" style="direction:rtl">{{post.title}}</h1>
+<img src="{{post.cover.url}}" alt=""  class="rounded-circle ml-2" width="15%">
+<h5 class="ml-5">{{post.author}}</h5>
+<h6 class="ml-3">{{post.create_time}}</h6>
+<p class="ml-2">{{post.text}}</p>
+<a class="btn btn-danger mb-2 ml-2" href="{% url "delete" post.id %}">حذف</a>
+<a class="btn btn-info mb-2 ml-2" href="{% url "edit" post.id %}">ویرایش</a>
+<a class="btn btn-warning mb-2 ml-2" href="{% url "posts" %}">بازگشت</a>
+
+{% endblock content %}
+
+
+
+

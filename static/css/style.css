@@ -1,0 +1,47 @@
+/* @font-face {
+    font-family:B Yekan;
+    src: url(/font/B\ Roya_0.ttf) format("ttf");
+} */
+
+
+body{
+
+    margin-top: 75px;
+ 
+}
+.navbar{
+
+    background: #fff;
+    opacity: 0.9;
+
+
+}
+
+
+
+
+
+#bg{
+
+
+    position: relative;
+    min-height: 500px;
+
+}
+
+.bg-main{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+
+.box-icon{
+    font-size: 50px;
+}

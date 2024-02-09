@@ -1,0 +1,333 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}<title>جنگو لند</title>{% endblock title %}
+{% block content %}
+
+
+<section id="bg" class="py-5">
+
+    <div class="bg-main">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 text-center">
+                    <h1 class="mt-5 pt-5 display-2 ">جنگو لند</h1>
+                    <p class="lead"> آموزش برنامه نویسی بک اند سایت به همراه متخصصین با تجربه</p>
+                    <a href="" class="btn btn-outline-primary btn-lg text-white ">
+                         اطلاعات بیشتر <li class="fas fa-arrow-left"></li>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{% static "images/airplane-animation-for-dribbble.gif" %}" alt="" class="img-fluid d-none d-lg-block">
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</section>
+<!-- subscribe -->
+<section class="bg-light text-white py-5" style="direction: rtl;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="نام را وارد کنید">
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="ایمیل را وارد کنید">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-block ">تایید</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- boxes -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center bg-primary text-white">
+                    <div class="card-body">
+                        <i class="fas fa-cogs text-white mb-2 box-icon"></i>
+                        <p>جنگو لند</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center border-primary">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap mb-2 box-icon"></i>
+                        <p class="text-muted">جنگو لند</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center bg-primary text-white">
+                    <div class="card-body">
+                        <i class="fab fa-python text-white mb-2 box-icon"></i>
+                        <p>جنگو لند</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center border-primary">
+                    <div class="card-body">
+                        <i class="fas fa-lightbulb mb-2 box-icon"></i>
+                        <p class="text-muted">جنگو لند</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Q/A -->
+<section id="about" class="py-5 bg-light text-center" style="direction: rtl;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mb-4">
+                    <h2 class="pb-3">سوالات متداول</h2>
+                     <p class="lead pb-3">پاسخ به سوالات شما</p>
+                </div>
+
+                <!-- Q/A -->
+
+                <div id="Q-box">
+                    <!-- ----- 1 -------- -->
+                    <div class="card bg-dark text-light mb-2">
+                        <div class="card-header">
+                            <h4 class="mb-0">
+                                <div href="#question1" data-toggle="collapse" data-parent="#Q-box">
+                                        چرا جنگو لند؟
+                                    
+                                </div>
+                            </h4>
+                        </div>
+
+                        <div class="collapse show" id="question1">
+                            <div class="card-body">
+                                چون بهترینه
+                            </div>
+                        </div>
+
+                    </div>  
+
+                    <!-- ---- 2 ---- -->
+                    <div class="card bg-dark text-light mb-2">
+                        <div class="card-header">
+                            <h4 class="mb-0">
+                                <div href="#question2" data-toggle="collapse" data-parent="#Q-box">
+                                        آیا پشتیبانی دارد؟
+                                    
+                                </div>
+                            </h4>
+                        </div>
+
+                        <div class="collapse" id="question2">
+                            <div class="card-body">
+                                بله
+                            </div>
+                        </div>
+
+                    </div> 
+                    <!-- ------ 3 ---- -->
+                    <div class="card bg-dark text-light mb-2">
+                        <div class="card-header">
+                            <h4 class="mb-0">
+                                <div href="#question3" data-toggle="collapse" data-parent="#Q-box">
+                                        استاد درس کیست؟
+                                    
+                                </div>
+                            </h4>
+                        </div>
+
+                        <div class="collapse" id="question3">
+                            <div class="card-body">
+                                استاد مجید رضایی
+                            </div>
+                        </div>
+
+                    </div> 
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- teachers -->
+<section id="teachers"   class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="pb-3">اساتید</h2>
+                <p class="lead pb-3">معرفی اساتید</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <!-- -------- 1 ----------- -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{% static "images/teacher.JPG" %}" class="img-fluid rounded-circle w-50 mb-2" >
+                        <h3>مجید رضایی</h3>
+                        <h5 class="text-muted">متخصص جنگو</h5>
+                        <p>ماژول را ما فرامی خوانیم ولی فریم ورک ما را فرا می خواند</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-telegram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------- 2 ----------- -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{% static "images/20230629_221233.png" %}" class="img-fluid rounded-circle w-50 mb-2" >
+                        <h3>مهدی احمدی</h3>
+                        <h5 class="text-muted">شاگرد</h5>
+                        <p>در حال یادگیری </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-telegram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------- 3---------- -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{% static "images/Capture.PNG" %}" class="img-fluid rounded-circle w-50 mb-2" >
+                        <h3>مجید رضایی</h3>
+                        <h5 class="text-muted">متخصص جنگو</h5>
+                        <p>ماژول را ما فرامی خوانیم ولی فریم ورک ما را فرا می خواند</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-telegram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------- 4 ------------ -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{% static "images/logo.jpeg" %}" class="img-fluid rounded-circle w-50 mb-2" >
+                        <h3>مهندس جواد مصلحی</h3>
+                        <h5 class="text-muted">متخصص جنگو</h5>
+                        <p>برنامه  نویس سایت </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-telegram"></i></a>
+                            </div>
+                            <div class="p-3">
+                                <a href=""><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<!-- contact -->
+<section id="contact" class="bg-light py-5 " style="direction: rtl;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <h3>فرم تماس با ما</h3>
+                <p class="lead">مطمئن باشید به سرعت پاسخ خواهیم داد</p>
+                <form>
+                    <!-- --- input name -------- -->
+                    <div class="input-group input-group-lg mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                         <input type="text" class="form-control" placeholder="نام">
+
+                    </div>
+                    <!-- ------ input email ------------- -->
+                    <div class="input-group input-group-lg mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                         <input type="email" class="form-control" placeholder="ایمیل">
+
+                    </div>
+                    <!-- ----- text area ------------- -->
+                    <div class="input-group input-group-lg mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-pen"></i>
+                            </span>
+                        </div>
+                         <textarea class="form-control" placeholder="پیام"  rows="4"></textarea>
+
+                    </div>
+                    <!-- -------- btn ----------- -->
+                    <input type="submit" value="ارسال" class="btn btn-primary btn-lg btn-block">
+
+
+
+
+                </form>
+
+            </div>
+            <div class="col-lg-2 align-self-center">
+                <img src="{% static "images/logo.png" %}" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<form dir="rtl" class="ml-3" method="post" action="" enctype="multipart/form-data">
+
+<br>
+{% csrf_token %}
+{{form.as_p}}
+
+<input type="submit" value="ارسال" >
+
+
+</form>
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+
